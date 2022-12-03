@@ -192,13 +192,22 @@
 	top: 11px;
 	left: 12px;
  }
- .icon-close:hover {
-	fill: var(--accent-color);
-	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ .icon-close {
+	&:hover {
+		fill: var(--accent-color);
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	 }
  }
- .input-call:focus + .icon-input {
-	fill: var(--accent-color);
+
+ .input-call {
+	&:focus + .icon-input {
+		fill: var(--accent-color);
+	 }
  }
- .input-call:hover, .input-call:focus {
-	outline: 1px solid var(--accent-color);
+ 
+ .input-call {
+	&:hover, &:focus {
+		outline: 1px solid var(--accent-color);
+	 }
  }
+ 

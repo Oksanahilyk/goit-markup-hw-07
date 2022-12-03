@@ -51,6 +51,7 @@
 	justify-content: center;
  }
  .social-icon__item {
+	display: flex;
 	width: 44px;
 	height: 44px;
 	background: #FFFFFF;
@@ -61,29 +62,32 @@
  .social-icons {
 	fill: #AFB1B8;
  }
- .social-icon__item:hover {
-	background-color: var(--accent-color);
+ .social-icon__item {
+	&:hover, &:focus {
+		background-color: var(--accent-color);
+	 }
  }
- .social-icon__item:focus {
-	background-color: var(--accent-color);
+ 
+ .social-icon__item {
+	&:hover, &:focus .social-icons {
+		fill: var(--primary-white-color);
+		}
  }
- .social-icon__item:hover .social-icons {
- fill: var(--primary-white-color);
- }
- .social-icon__item:focus .social-icons {
-	fill: var(--primary-white-color);
-	}
- .team-list .social-link {
-  width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+ .team-list {
+	.social-link {
+		width: 100%;
+		 height: 100%;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+	  }
+	  .social-icon__item:last-child {
+		margin-right: 0;
+	 }
  }
  .social-icon .social-link {
 	display: flex;
 	padding: 0px;
  }
- .team-list .social-icon__item:last-child {
-	margin-right: 0;
- }
+ 

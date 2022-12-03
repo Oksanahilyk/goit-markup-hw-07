@@ -42,8 +42,10 @@
 	width: 216px;
 	height: 50px;
  }
- .hero-button:hover,
- .hero-button:focus {
-	color: var(--primary-white-color);
-	background-color: #188ce8;
+ .hero-button {
+	&:hover, &:focus {
+		color: var(--primary-white-color);
+		background-color: #188ce8;
+	 }
  }
+ 
