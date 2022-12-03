@@ -14,11 +14,14 @@
 	letter-spacing: 0.03em;
 	color: var(--color-transparent);
  }
- .item-contact {
+ .li .item-contact {
 	display: block;
+ }
+ 
+ .item-contact {
 	margin-bottom: 9px;
  }
-  
+ 
  .item-contact:last-child {
 	margin-bottom: 0px;
  }
@@ -28,8 +31,7 @@
 		color: var(--accent-color);
 	 }
  }
- 
- 
+  
  /* стилі адреси і контактів */
  .address {
 	color: var(--primary-white-color);
@@ -47,8 +49,7 @@
 	 }
  }
  
- 
- .container-footer {
+  .container-footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
@@ -60,18 +61,16 @@
  .logo-block {
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	margin-bottom: 20px;
  }
  .webstudio {
 	display: block;
 	margin-bottom: 20px;
 	margin-right: 135px;
-	/* margin-bottom: 20px; */
 	padding-top: 0px;
 	padding-bottom: 0px;
  }
- 
+
  .contact-block {
 	display: flex;
 	margin-right: 70px;
@@ -98,7 +97,6 @@
 	justify-content: center;
 	align-items: center;
 	}
-	
  .title-invitation {
 	margin-bottom: 20px;
  font-family: var(--main-font);
@@ -127,7 +125,7 @@
 		background: var(--accent-color);
 	 }
  }
-
+ 
  .social-invitation {
 	fill: var(--primary-white-color);
  }

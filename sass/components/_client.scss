@@ -18,24 +18,19 @@
  .client-item {
 	display: block;
  }
+
  .client-item {
-	&:hover, &:focus {
-		border: 1px solid var(--accent-color);
-	 }
- }
- 
-  .client-item {
+	&:hover {
+  border: 1px solid var(--accent-color);
+}
+}
+
+.client-item {
 	&:hover .client-icon {
-		fill: var(--accent-color);
-		}
-  }
-  
-	.client-item {
-		&:focus .client-icon {
-			fill: var(--accent-color);
-			}
-	}
-	
+  fill: var(--accent-color);
+  } 
+}
+
  .client-item {
 	display: flex;
 	justify-content: center;

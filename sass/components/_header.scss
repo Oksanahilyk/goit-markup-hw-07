@@ -71,17 +71,13 @@
 	fill: var(--primary-text-color);
  }
  .site-contacts__contact {
-	&:hover .site-contacts__icon {
-		fill: var(--accent-color);
+	&:hover, &:focus {
+		.site-contacts__icon {
+			fill: var(--accent-color);
+		 }
 	 }
  }
- 
- .site-contacts__contact {
-	&:focus .site-contacts__icon {
-		fill: var(--accent-color);
-	 }
- }
- 
+
  /* стилі навігатора */
  
  .site-nav__link-current .site-nav__link-secondary {
@@ -93,14 +89,18 @@
  
  .site-nav__link-secondary {
 	&:hover, &:focus {
-		color: var(--accent-color);
-	 }
+	 color: var(--accent-color);
+  }
  }
  
+ 
+ .site-nav__link-current {
+	color: var(--accent-color);
+  
+ }
  .site-nav__link-current {
 	display: block;
 	position: relative;
-	color: var(--accent-color);
 	}
  
  .site-nav__link-current {
@@ -114,10 +114,11 @@
 		height: 4px;
 		background-color: var(--accent-color);
 		border-radius: 2px;
+	 
 	 }
  }
  
- .site-nav__link-secondary {
+.site-nav__link-secondary {
 	&::after {
 		display: block;
 		position: absolute;
@@ -131,15 +132,13 @@
 		transform: scale(0);
 		transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1)
 	 }
- }
+}
  
  .site-nav__link-secondary {
 	&:hover {
 		&::after {
 			transform: scale(1);
-	 }
-	 } 
- }
- 
- 
+		 } 
+	}
+}
  
