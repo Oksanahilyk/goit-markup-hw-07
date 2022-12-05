@@ -12,36 +12,32 @@
 	justify-content: center;
 	align-items: center;
  }
- .client-icon {
-	fill: #AFB1B8;
- }
- .client-item {
-	display: block;
- }
-
- .client-item {
-	&:hover, &:focus {
-  border: 1px solid var(--accent-color);
-}
-}
-
-.client-item {
-	&:hover, &:focus .client-icon {
-  fill: var(--accent-color);
-  } 
-}
-
- .client-item {
+ .client-item a {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	color: #afb1b8;
+	border: 1px solid #afb1b8;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+ }
+ .client-icon {
+	fill: currentColor;
+ }
+ 
+ .client-item a:focus,
+ .client-item a:hover {
+	color: var(--accent-color);
+	border: 1px solid var(--accent-color);
+ }
+ 
+ .client-item {
 	width: 170px;
- height: 92px;
- border: 1px solid #AFB1B8;
- border-radius: 4px;
+	height: 92px;
  }
  .client-item + .client-item {
- margin-left: 30px;
+	margin-left: 30px;
  }
  
  .client-logo {
