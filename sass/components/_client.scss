@@ -20,13 +20,13 @@
  }
 
  .client-item {
-	&:hover {
+	&:hover, &:focus {
   border: 1px solid var(--accent-color);
 }
 }
 
 .client-item {
-	&:hover .client-icon {
+	&:hover, &:focus .client-icon {
   fill: var(--accent-color);
   } 
 }

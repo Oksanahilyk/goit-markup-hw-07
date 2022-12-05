@@ -16,7 +16,7 @@
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
  }
  .gallary-link {
-	&:hover {
+	&:hover, &:focus {
 		 .gallary-thumb::before {
   transform: translateY(0);
 }
@@ -44,7 +44,7 @@
  color: var(--primary-white-color);
  }
  .gallary-link {
-	&:hover {
+	&:hover, &:focus {
 		.discription {
 			transform: translate(-50%, -50%) scale(1);
 		 }
